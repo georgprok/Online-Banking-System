@@ -1,0 +1,21 @@
+# Online Banking System
+
+Pet-project на `Java 17` + `Spring Boot` + `PostgreSQL`.
+
+## Stack
+- Java 17
+- Spring Boot
+- Maven
+- PostgreSQL
+- Spring Data JPA
+- REST API
+
+## Run
+1. Создать БД в PostgreSQL:
+   - `online_banking`
+2. При необходимости переопределить переменные окружения:
+   - `DB_URL`
+   - `DB_USERNAME`
+   - `DB_PASSWORD`
+3. Запустить приложение:
+   - `mvn spring-boot:run`
