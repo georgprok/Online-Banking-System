@@ -1,8 +1,9 @@
 # Online Banking System
 
-Pet-project на `Java 17` + `Spring Boot` + `PostgreSQL`.
+Simple backend pet project for online banking operations.
 
-## Stack
+## Tech Stack
+
 - Java 17
 - Spring Boot
 - Maven
@@ -10,12 +11,18 @@ Pet-project на `Java 17` + `Spring Boot` + `PostgreSQL`.
 - Spring Data JPA
 - REST API
 
-## Run
-1. Создать БД в PostgreSQL:
+## Current Features
+
+- User registration (`POST /api/auth/register`)
+- User, Account, and Transaction domain model
+
+## Run Locally
+
+1. Create a PostgreSQL database:
    - `online_banking`
-2. При необходимости переопределить переменные окружения:
-   - `DB_URL`
-   - `DB_USERNAME`
-   - `DB_PASSWORD`
-3. Запустить приложение:
+2. Configure environment variables if needed:
+   - `DB_URL` (default: `jdbc:postgresql://localhost:5432/online_banking`)
+   - `DB_USERNAME` (default: `postgres`)
+   - `DB_PASSWORD` (default: `postgres`)
+3. Start the application:
    - `mvn spring-boot:run`
